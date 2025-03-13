@@ -1,8 +1,10 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Do you want to play music in the background?',
-        icon: 'warning',
+        title: '¿Gustas que se reproduzca una canción de fondo?',
+        imageUrl: 'img/kuromi.jpg', // Ruta de la imagen
+        imageWidth: 100, // Ajusta el tamaño si es necesario
+        imageHeight: 100,
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
@@ -17,6 +19,7 @@ window.addEventListener('load', () => {
         }
     });
 });
+
 
 
 // animation timeline
@@ -102,7 +105,7 @@ const animationTimeline = () => {
         0.05
     )
     .to(".fake-btn", 0.1, {
-        backgroundColor: "rgb(127, 206, 248)",
+        backgroundColor: "rgb(4, 0, 255)",
     },
     "+=4")
     .to(
